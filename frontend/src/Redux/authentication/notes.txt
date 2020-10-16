@@ -1,0 +1,5 @@
+In your requirement, it doesn't depend much on which backend to use.
+
+On the backend just create a rest API to handle the search request (if you want to use NodeJS, you can refer this article https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4).
+
+On the frontend, you can use just XHR request to make live search, no need socket. Each time user type on an input, detect the input change event and send the search request to the backend api (you can do it by just pure javascript XHR request, or use ajax module in JQuery ...), fetch the result from response, print to the screen. After you can achieve this, you can improve your search performance on the frontend by limiting request in amount of time (not sending request each time use press a key, but after an amount of time, example each 200ms, this technique call "debounce").

@@ -1,0 +1,14 @@
+//stalking 
+//     let views = []
+//     if(req.user.id){
+//         views.push(req.user.id)
+//         // console.log(views)
+//         let view = new Views({
+//             user:views
+//         })
+//         view.save({}).then(views => {
+//             console.log(views)
+//         })    
+//         Views.find({})
+//             .then(res => console.log(res))  
+//     }
